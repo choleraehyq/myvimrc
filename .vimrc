@@ -15,7 +15,7 @@ set nobackup
 else
 set backup
 endif
-set makeprg=gcc\ -o\ %<\ -std=c99\ -Wall\ %
+set makeprg=clang\ -o\ %<\ %
 colorscheme evening
 map <F5> :make
 map <F9> :!./%<
