@@ -4,9 +4,10 @@ filetype on
 set background=dark
 syntax on
 set autoindent
-set smartindent
 set cindent
 set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set showmatch
 set ruler
 set incsearch
@@ -15,7 +16,7 @@ set nobackup
 else
 set backup
 endif
-set makeprg=clang\ -o\ %<\ %
+set makeprg=clang\ -o\ %<\ -Wall\ %
 colorscheme evening
 map <F5> :make
 map <F9> :!./%<
